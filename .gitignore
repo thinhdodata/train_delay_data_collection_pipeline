@@ -30,3 +30,6 @@ data/graph/*.csv
 # Compressed archives
 *.tar.gz
 *.zip
+
+data/
+delete_files/
