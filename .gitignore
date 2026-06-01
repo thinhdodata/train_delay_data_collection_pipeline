@@ -1,5 +1,32 @@
-data/
-*.pb
-*.csv
+# Python cache
 __pycache__/
-.env.DS_Store
+*.pyc
+
+# Mac system files
+.DS_Store
+
+# Virtual environments
+.env
+.venv/
+venv/
+
+# AWS/private keys
+*.pem
+train-key.pem
+
+# Raw data
+data/raw_snapshots/
+data/raw_service_alerts/
+data/raw_trip_updates/
+
+# Processed/intermediate data
+data/processed_snapshots/
+data/final_dataset/
+
+# Large graph/model artifacts
+data/graph/*.pt
+data/graph/*.csv
+
+# Compressed archives
+*.tar.gz
+*.zip

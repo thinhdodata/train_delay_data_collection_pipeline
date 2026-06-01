@@ -9,7 +9,8 @@ SAVE_DIR = Path("data/raw_snapshots")
 SAVE_DIR.mkdir(parents=True, exist_ok=True)
 
 while True:
-    response = requests.get(API_URL)
+    response = requests.get(API_URL, timeout=30)
+    response.raise_for_status()
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
